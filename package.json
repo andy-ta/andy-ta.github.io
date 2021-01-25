@@ -1,22 +1,19 @@
 {
-  "name": "universal-resume-template",
+  "name": "andy-ta.github.io",
   "version": "3.1.0",
-  "description": "Minimal and formal résumé (CV) website template for print, mobile, and desktop. https://bit.ly/ur_demo",
-  "homepage": "https://github.com/WebPraktikos/universal-resume",
+  "description": "Minimal and formal résumé (CV) website template for print, mobile, and desktop created from https://github.com/WebPraktikos/universal-resume.",
+  "homepage": "https://andy-ta.github.io/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/WebPraktikos/universal-resume.git"
+    "url": "hhttps://github.com/andy-ta/andy-ta.github.io.git"
   },
-  "bugs": {
-    "url": "https://github.com/WebPraktikos/universal-resume/issues"
-  },
-  "license": "NonCommercial-ShareAlike 1.0 Generic",
-  "author": "WebPraktikos <hi@webpraktikos.com>",
+  "license": "CC-BY-NC-SA-1.0",
+  "author": "Andy Ta <me.andyta@gmail.com>",
   "scripts": {
     "serve": "concurrently \"postcss ./tailwind.css -o docs/build.css --watch\"  \"live-server ./docs \"",
     "build": "cross-env NODE_ENV=build postcss ./tailwind.css -o ./docs/build.css"
   },
-  "dependencies": {
+  "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.0.6",
     "autoprefixer": "^9.7.4",
     "concurrently": "^5.1.0",

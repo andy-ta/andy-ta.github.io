@@ -5,10 +5,7 @@
 
 @screen print {
   @page {
-    margin-top: 0in;
-    margin-bottom: 0in;
-    margin-left: 0in;
-    margin-right: 0in;
+    margin: 0;
   }
 
   body {
@@ -19,6 +16,10 @@
 
   .page {
     padding: theme(spacing.16) theme(spacing.16) !important;
+  }
+
+  .page:last-child {
+    padding-bottom: calc(4rem - 12px) !important; /* Hack to remove 3rd empty page. */
   }
 
   .initial {
